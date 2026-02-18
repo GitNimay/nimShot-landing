@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Download, ExternalLink, Loader2, Windows } from "lucide-react";
+import { Download, ExternalLink, Loader2, Monitor } from "lucide-react";
 
 interface Release {
   tag_name: string;
@@ -95,7 +95,7 @@ export default function DownloadSection() {
           {release && (
             <>
               <div className="flex items-center justify-center gap-2 mb-6">
-                <Windows className="w-5 h-5 text-blue-400" />
+                <Monitor className="w-5 h-5 text-blue-400" />
                 <span className="text-lg font-medium">
                   Version {release.tag_name.replace("v", "")}
                 </span>
